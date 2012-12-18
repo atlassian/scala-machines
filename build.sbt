@@ -1,6 +1,6 @@
 name := "machines"
 
-version := "0.0.1-Atl-M1"
+version := "0.0.1-atlassian-M1"
 
 resolvers += "Scala Tools Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
