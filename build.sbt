@@ -24,3 +24,7 @@ libraryDependencies ++= Seq(
 scalaVersion := "2.9.2"
 
 scalacOptions ++= Seq("-deprecation", "-Ydependent-method-types", "-unchecked")
+
+mappings in (Compile, packageBin) ++= Seq(
+    file("LICENSE") -> "META-INF/LICENSE"
+)
