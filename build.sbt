@@ -12,13 +12,11 @@ pomExtra := (
         <connection>scm:git:git@github.com:atlassian/scala-machines.git</connection>
         <developerConnection>scm:git:git@github.com:atlassian/scala-machines.git</developerConnection>
     </scm>
-
     <distributionManagement>
         <repository>
             <id>atlassian-3rdparty</id>
             <url>https://maven.atlassian.com/3rdparty</url>
         </repository>
-
         <snapshotRepository>
             <id>atlassian-3rdparty-snapshot</id>
             <url>https://maven.atlassian.com/3rdparty-snapshot</url>
