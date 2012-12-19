@@ -4,12 +4,12 @@ import Keys._
 object AtlassianThirdParty extends Plugin {
     override def settings = Seq(
         publishTo <<= version { (v: String) =>
-            val nexus = "https://maven.atlassian.com/3rdparty/"
+            val nexus = "https://maven.atlassian.com/"
 
             if (v.trim.endsWith("SNAPSHOT"))
-                Some("snapshots" at nexus + "content/repositories/snapshots")
+                Some("snapshots" at nexus + "3rdparty-snapshot")
             else
-                Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+                Some("releases"  at nexus + "3rdparty")
         }
     )
 }
