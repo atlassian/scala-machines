@@ -8,9 +8,22 @@ homepage := Some(url("https://github.com/runarorama/scala-machines"))
 
 pomExtra := (
     <scm>
-        <url>git@github.com:runarorama/scala-machines.git</url>
-        <connection>scm:git:git@github.com:runarorama/scala-machines.git</connection>
+        <url>git@github.com:atlassian/scala-machines.git</url>
+        <connection>scm:git:git@github.com:atlassian/scala-machines.git</connection>
+        <developerConnection>scm:git:git@github.com:atlassian/scala-machines.git</developerConnection>
     </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>atlassian-3rdparty</id>
+            <url>https://maven.atlassian.com/3rdparty</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>atlassian-3rdparty-snapshot</id>
+            <url>https://maven.atlassian.com/3rdparty-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 )
 
 resolvers += "Scala Tools Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
