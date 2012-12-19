@@ -6,6 +6,13 @@ licenses := Seq("BSD-style" -> url("https://github.com/runarorama/scala-machines
 
 homepage := Some(url("https://github.com/runarorama/scala-machines"))
 
+pomExtra := (
+    <scm>
+        <url>git@github.com:runarorama/scala-machines.git</url>
+        <connection>scm:git:git@github.com:runarorama/scala-machines.git</connection>
+    </scm>
+)
+
 resolvers += "Scala Tools Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
 libraryDependencies ++= Seq(
