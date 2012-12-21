@@ -29,14 +29,14 @@ pomExtra := (
 resolvers += "Scala Tools Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
 libraryDependencies ++= Seq(
-  "org.scalaz" %% "scalaz-core" % "7.0.0-M6"
-, "org.scalaz" %% "scalaz-effect" % "7.0.0-M6"
-, "org.scalacheck" %% "scalacheck" % "1.9" % "test"
+  "org.scalaz" % "scalaz-core" % "7.0.0-M6" cross CrossVersion.full
+, "org.scalaz" % "scalaz-effect" % "7.0.0-M6" cross CrossVersion.full
+, "org.scalacheck" % "scalacheck" % "1.10.0" % "test" cross CrossVersion.full
 )
 
-scalaVersion := "2.9.2"
+scalaVersion := "2.10.0-RC5"
 
-scalacOptions ++= Seq("-deprecation", "-Ydependent-method-types", "-unchecked")
+scalacOptions ++= Seq("-deprecation", "-unchecked")
 
 mappings in (Compile, packageBin) ++= Seq(
     file("LICENSE") -> "META-INF/LICENSE"
