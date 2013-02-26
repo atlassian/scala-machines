@@ -2,7 +2,7 @@ name := "machines"
 
 organization := "com.clarifi"
 
-version := "0.0.1-atlassian-M2"
+version := "0.0.1-atlassian-M3"
 
 licenses := Seq("BSD-style" -> url("https://github.com/runarorama/scala-machines/blob/master/LICENSE"))
 
